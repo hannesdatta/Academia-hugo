@@ -441,6 +441,10 @@ a.badge:hover {
   border-radius: .2rem;
 }
 
+.hero-btn {
+  margin-bottom: 10px;
+}
+
 /*************************************************
  *  Toolbar Buttons
  **************************************************/
@@ -572,8 +576,16 @@ div.alert a {
 
 /* homepage */
 .hero-img{
-  border: 10px solid #fff;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px 0px;
+  max-width: 80%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+
+@media (max-width:629px) {
+  .hero-img{
+    display: none;
+  }
 }
 
 /* about */
@@ -609,31 +621,31 @@ div.alert a {
 .section-heading h1{
   position: relative;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   display: inline-block;
   font-size: 30px;
-  &::before{
-      content: '';
-      position: absolute;
-      z-index: 99;
-      background-color: $sta-primary;
-      width: 6px;
-      height: 6px;
-      border-radius: 100%;
-      left: -17px;
-      top: 15px;
-  }
-  &::after{
-    content: '';
-    position: absolute;
-    z-index: 99;
-    background-color: $sta-primary;
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    right: -17px;
-    top: 15px;
-  }
+  // &::before{
+  //     content: '';
+  //     position: absolute;
+  //     z-index: 99;
+  //     background-color: $sta-primary;
+  //     width: 6px;
+  //     height: 6px;
+  //     border-radius: 100%;
+  //     left: -17px;
+  //     top: 15px;
+  // }
+  // &::after{
+  //   content: '';
+  //   position: absolute;
+  //   z-index: 99;
+  //   background-color: $sta-primary;
+  //   width: 6px;
+  //   height: 6px;
+  //   border-radius: 100%;
+  //   right: -17px;
+  //   top: 15px;
+  // }
 }
 
 .section-heading p{
