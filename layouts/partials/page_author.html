@@ -35,7 +35,7 @@
 
     <div class="media-body">
       <h5 class="card-title" itemprop="name"><a href="{{$profile_url}}">{{.Params.name}}</a></h5>
-      {{ with .Params.role }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
+      {{ with .Params.role }}<h6 class="card-subtitle"> {{. | markdownify | emojify}}</h6>{{end}}
       {{ with .Params.bio }}<p class="card-text" itemprop="description">{{. | markdownify | emojify}}</p>{{end}}
       <ul class="network-icon" aria-hidden="true">
         {{ range .Params.social }}
